@@ -1,0 +1,43 @@
+
+<div class="container-home">
+
+  <div class="welcome-section">
+    <form class="form-welcome">
+      <div class="title">Bienvenido a Saldo Ar,
+        <br>
+        <span>donde podas intercambiar monedas</span>
+      </div>
+      <div
+        class="title"
+        style="max-width: 800px;">"¡Bienvenido a Saldo Ar Exchange, donde cada transacción es una puerta abierta hacia nuevas oportunidades financieras! Cambia tus monedas con total confianza, experimenta tarifas competitivas y descubre la libertad de un intercambio sin complicaciones. ¡En Saldo Ar Exchange, tu viaje financiero comienza aquí, paga con facilidad, invierte con confianza y lleva tus finanzas al siguiente nivel!"
+      </div>
+
+      <button class="button-confirm" (click)="goToLogin()">Let`s go →</button>
+    </form>
+  </div>
+  <form class="form">
+    <div class="title">Tasas de cambio<br><span>Cotizaciones al
+        instante</span></div>
+    <div class="right-section">
+      <div class="cards">
+        <div
+          *ngFor="let currencyKey of  currencyArray"
+          [ngClass]="getCardClass(currencyKey.key)">
+          <p class="tip">{{ currencyKey.key}}</p>
+          <p class="second-text">Compra: {{ currencyKey.value.bid }}</p>
+          <p class="second-text">Venta: {{ currencyKey.value.ask }}</p>
+          <p>
+            <button class="button-confirm" mat-raised-button> <a
+                (click)="redirectTo(currencyKey.value.bid_url)">Compra</a>
+            </button>
+            <button class="button-confirm" mat-raised-button> <a
+                (click)="redirectTo(currencyKey.value.ask_url)">Venta</a></button>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </form>
+
+</div>

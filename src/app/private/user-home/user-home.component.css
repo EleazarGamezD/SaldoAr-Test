@@ -1,0 +1,257 @@
+/* titulos y subtitulos */
+
+.title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #1F2937;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  text-align: center;
+}
+
+.sub-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #1F2937;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  text-align: center;
+}
+
+/* tarjetas de monedas */
+.card {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background: #fff;
+  border: solid 4px #333;
+  box-shadow: -5px 5px #333;
+  transition: all .2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  margin: 10px 10px 0 0;
+  box-shadow: 0px 0px #333;
+}
+
+.card .img-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: filter .2s 1s ease-in-out;
+}
+
+.card:hover .img-card {
+  filter: blur(1px);
+}
+
+.card .add-cart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 250px;
+  font-weight: bold;
+  font-size: 19px;
+  opacity: 0;
+}
+
+.card:hover .add-cart {
+  opacity: 1;
+  transition: opacity .3s 1s ease-in-out;
+}
+
+.card .info-card {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: solid 1px #333;
+}
+
+.card .info-card p {
+  font-size: 14px;
+  margin: 5px;
+}
+
+/* espaciador  */
+.spacer {
+  height: 50px;
+}
+
+.balance {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20% 0 20%;
+
+}
+
+.balance-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+
+}
+
+@media only screen and (min-width: 1920px) {
+  .balance {
+    margin: 0 30% 0 30%;
+
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .balance {
+    margin: 0 35% 0 35%;
+
+  }
+
+}
+
+/* card coins section */
+
+.trade-zone {
+  margin: 0 10% 0 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.trade-container {
+  height: 300px;
+  width: 370px;
+}
+
+.card-coins {
+  padding: 1rem;
+  background-color: #fff;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 10px 10px #323232;
+  border: 3px solid #323232;
+}
+
+.title-coins {
+  display: flex;
+  align-items: center;
+}
+
+.title-coins span {
+  position: relative;
+  padding: 0.5rem;
+  background-color: #10B981;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 99 99px;
+}
+
+.title-coins span svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  height: 1rem;
+}
+
+.title-coins-text {
+  margin-left: 0.5rem;
+  color: #374151;
+  font-size: 18px;
+}
+
+.percent {
+  margin-left: 0.5rem;
+  color: #02972f;
+  font-weight: 600;
+  display: flex;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.data p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #1F2937;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.data .range {
+  position: relative;
+  background-color: #E5E7EB;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.data .range .fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #10B981;
+  width: 76%;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+
+/* buttons section */
+.button-log:active, .button-confirm:active {
+  box-shadow: 0px 0px var(--main-color);
+  transform: translate(3px, 3px);
+}
+
+.button-confirm {
+  margin: 50px auto 0 auto;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+.button-secction {
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: beige;
+  --main-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 5px;
+}
