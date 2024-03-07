@@ -11,6 +11,7 @@ Eleazar Gamez
 ## Instalación
 
 Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu máquina.
+
 Asegúrate de tener [Angular CLI](https://angular.io/cli) instalado en tu máquina.
 
 Puedes instalar Angular CLI utilizando el siguiente comando:
@@ -27,6 +28,9 @@ cd saldo-ar-test
 
 # Instala las dependencias
 npm install
+
+# Levanta el proyecto
+ng serve
 
 # Dependencias
 
