@@ -20,7 +20,7 @@ npm install -g @angular/cli
 ```
 ```bash
 # Clona el repositorio
-git clone [https://github.com/tu-usuario/saldo-ar-test.git](https://github.com/EleazarGamezD/SaldoAr-Test)
+git clone https://github.com/tu-usuario/saldo-ar-test.git
 
 # Navega al directorio del proyecto
 cd saldo-ar-test
