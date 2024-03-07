@@ -4,6 +4,9 @@ Aplicación Web hecha como prueba técnica Frontend donde se consume el Api de S
 
 ejemplo: POST https://api.saldo.com.ar/bridge/login
 
+## Usuario y Password 
+email=admin@saldo.com.ar y password=CoolSite
+
 ## Realizado por 
 
 Eleazar Gamez 
