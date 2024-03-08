@@ -4,10 +4,6 @@ Aplicación Web hecha como prueba técnica Frontend donde se consume el Api de S
 
 ejemplo: POST https://api.saldo.com.ar/bridge/login
 
-## Link al Live demo
-
-[SaldoArTest](https://saldo-ar-test.vercel.app/systems)
-
 ## Realizado por 
 
 Eleazar Gamez 
@@ -15,6 +11,7 @@ Eleazar Gamez
 ## Instalación
 
 Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu máquina.
+
 Asegúrate de tener [Angular CLI](https://angular.io/cli) instalado en tu máquina.
 
 Puedes instalar Angular CLI utilizando el siguiente comando:
@@ -31,6 +28,9 @@ cd saldo-ar-test
 
 # Instala las dependencias
 npm install
+
+# Levanta el proyecto
+ng serve
 
 # Dependencias
 
