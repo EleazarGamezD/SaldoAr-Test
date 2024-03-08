@@ -4,10 +4,20 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: 'Roboto';
+  height: 100%;
 }
 
+main {
+  flex: 1;
+  /* Esto hace que el contenido ocupe todo el espacio disponible */
+}
 
 body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  /* Establecer altura al 100% de la altura visible (viewport height) */
 
   background-color: rgb(181, 227, 239);
 }
