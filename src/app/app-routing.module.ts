@@ -9,9 +9,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'systems', component: UserHomeComponent },
-  /* { path: 'allnote', component: NotesHomeComponent },
-   { path: 'new-note', component: NotesNewComponent },
-   { path: 'editnote/:id', component: NotesEditComponent } */
+  { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({

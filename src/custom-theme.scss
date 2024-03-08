@@ -70,7 +70,7 @@
 
  // Background config
  // Light bg
- $light-background: #fffbff;
+ $light-background: #ffffff;
  $light-bg-darker-5: darken($light-background, 5%);
  $light-bg-darker-10: darken($light-background, 10%);
  $light-bg-darker-20: darken($light-background, 20%);
@@ -210,6 +210,7 @@
  );
 
  // Theme Init
+
  @include mat.all-component-themes($theme);
 
  .theme-alternate {

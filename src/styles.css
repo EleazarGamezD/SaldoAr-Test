@@ -3,20 +3,30 @@
 html, body {
   height: 100%;
   margin: 0;
+  font-family: 'Roboto';
 }
 
+
 body {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  /* Una fila para el contenido principal y otra para el footer */
-  min-height: 100vh;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  min-height: 100vh;
-  flex: 1;
+
+  background-color: rgb(181, 227, 239);
+}
+
+.altTheme {
+
+  background-color: rgb(181, 227, 239);
+}
+
+.theme-alternate {
+
+  background-color: #393838;
+}
+
+.theme-alternate #title {
+  color: white;
 }
 
 .footer {
-
   height: 4rem;
   background-color: black;
   display: flex;
